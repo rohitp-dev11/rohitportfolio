@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="en" class="scroll-smooth">
+  <head>
+    <meta charset="UTF-8" />
+    <link rel="icon" type="image/svg+xml" href="/vite.svg" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Rohit P — Code & Concept Developer</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700;800&display=swap" rel="stylesheet">
+    <script>
+      tailwind.config = {
+        theme: {
+          extend: {
+            fontFamily: {
+              sans: ['Poppins', 'sans-serif'],
+            },
+            colors: {
+              'primary': '#19383d',
+              'accent': '#fcc419',
+              'light-bg': '#ffffff',
+              'light-secondary-bg': '#f8f9fa',
+              'dark-text': '#212529',
+              'light-text': '#ffffff',
+              'subtle-text': '#6c757d',
+            },
+            animation: {
+              'float': 'float 6s ease-in-out infinite',
+              'pulse-shadow': 'pulse-shadow 4s ease-in-out infinite',
+            },
+            keyframes: {
+              float: {
+                '0%': { transform: 'translateY(0px)' },
+                '50%': { transform: 'translateY(-10px)' },
+                '100%': { transform: 'translateY(0px)' },
+              },
+              'pulse-shadow': {
+                '0%': {
+                  boxShadow: '0 0 0 0px rgba(252, 196, 25, 0.5)',
+                },
+                '100%': {
+                  boxShadow: '0 0 0 25px rgba(252, 196, 25, 0)',
+                },
+              },
+            }
+          },
+        },
+      }
+    </script>
+    <script type="text/javascript" src="https://cdn.jsdelivr.net/npm/@emailjs/browser@4/dist/email.min.js"></script>
+  <script type="importmap">
+{
+  "imports": {
+    "react/": "https://aistudiocdn.com/react@^19.2.0/",
+    "react": "https://aistudiocdn.com/react@^19.2.0",
+    "react-dom/": "https://aistudiocdn.com/react-dom@^19.2.0/"
+  }
+}
+</script>
+<link rel="stylesheet" href="/index.css">
+</head>
+  <body class="bg-light-bg text-dark-text font-sans">
+    <div id="root"></div>
+    <script type="module" src="/index.tsx"></script>
+  </body>
+</html>
